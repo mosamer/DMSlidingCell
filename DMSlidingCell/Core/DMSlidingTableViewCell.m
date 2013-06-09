@@ -175,14 +175,14 @@
                          } completion:^(BOOL finished) {
                             [UIView animateWithDuration:kDMSlidingOutAnimationDuration
                                                   delay:0
-                                                options:UIViewAnimationCurveLinear
+                                                options:UIViewAnimationOptionCurveLinear
                                              animations:^{
                                                  [self setOffsetForView:self.contentView
                                                                     offset:CGPointMake(bounce_distance, 0.0f)];
                                              } completion:^(BOOL finished) {
                                                  [UIView animateWithDuration:kDMSlidingOutAnimationDuration
                                                                        delay:0.0f
-                                                                     options:UIViewAnimationCurveLinear
+                                                                     options:UIViewAnimationOptionCurveLinear
                                                                   animations:^{
                                                                        
                                                                    } completion:^(BOOL finished) {
